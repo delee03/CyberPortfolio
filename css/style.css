@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL */
+
+.heading {
+    max-width: 750px;
+    color: #000;
+    text-align: center;
+
+}
+.heading h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.heading p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.section {
+    padding: 50px 0;
+}
+header .collapse .nav-link:hover {
+    color: green !important;
+}
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+header .collapse .nav-link::before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    height: 4px;
+    width: 0;
+    transition: all .5s;
+}
+header .collapse .nav-link:hover::before{
+    width: 100%;
+}
+
+header .collapse .nav-link.active {
+    color: green !important;
+}
+header .collapse .nav-link.active::before{
+    width: 100%;
+}
+.navbar-brand i {
+    vertical-align: middle;
+}
+.navbar-brand{
+    font-size: 39px;
+}
+
+/* carousel */
+.carousel .carousel-item .carousel_content {
+    position: absolute;
+    padding: 30px 30px;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /* căn giữa theo chiều X dùng với position */ 
+
+}
+
+.carousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(39, 43, 54, .5);
+}
+
+.carousel_content h1 {
+    font-size: 50px;
+    padding: 30px 0;
+}
+.carousel_content p {
+    font-size: 25px;
+}
+
+.carousel .carousel-item  .carousel_content img {
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Project */
+.project_content .nav button.active {
+    background-color: #35a22c;
+    border-color: #35a22c !important;
+    color: #fff !important;
+}
+
+.project_content .row .project_item {
+    margin-top: 30px;
+    border-radius: 1rem;
+    /* box-shadow:  0 0 .4rem rgba(0, 0, 0, .13); */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;    cursor: pointer;
+    /* animation-name: zoomOut;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-delay: .5s; */
+}
+.project_content .row .project_item img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+}
+.project_content .row .project_itemText {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+.project_content .row .project_item:hover .project_itemText {
+    border-bottom: 1px solid #35a22c;
+    border-left: 1px solid #35a22c;
+    border-right: 1px solid #35a22c;
+    border-radius: 0 0 1rem 1rem;
+}
+.project_content .row .project_itemText h3 {
+   font-size: 1.25rem;
+    
+}
+.project_content .row .project_item:hover  .project_itemText h3 {
+    color: #35a22c;
+}
+.project_content .row .project_itemText p {
+    color: #585858;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out { 
+    opacity: .5;
+  }
+  .back-to-top:focus {
+    opacity: 1;
+  }
+
+/* Section  start*/
+
+.available{
+    margin: 50px 0 50px;
+    position: relative;
+    background: url(../img/3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0 120px;
+    text-align: center;
+    color:#fff;
+}
+.available .heading {
+    color: #fff;
+}
+.available::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(7, 10, 12, .72);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.available-content .item {
+    margin-top: 40px;
+    padding: 40px 30px;
+  
+    background: rgba( 255, 255, 255, 0.08);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all .4s;
+}
+.available-content .item i {
+    color: green;
+    font-size: 45px;
+}
+
+.available-content .item h3 {
+    margin: 20px 0;
+}
+.available-content .item:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.award.section{
+    position: relative;
+    padding: 50px 0;
+}
+.award .bg {
+    position: absolute;
+    background: url(../img/memphis_3.png) no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+
+.award-left {
+    padding: 50px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+    border-radius: 10px;
+
+}
+.award-left h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.award-left p {
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.award-right {
+    padding: 45px 0;
+}
+.award-right img {
+    height: 60%;
+}
+
+footer {
+    padding: 50px 0;
+    background: #000;
+
+}
+.footer-top {
+    margin-left: -20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-top a {
+    color: #aaa;
+}
+.footer-top i {
+    color: #aaa;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #373535;
+    transition: all .3s;
+}
+
+.footer-top i:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer-bot{
+    margin-top: 40px;
+    color: #aaa;
+}
+@keyframes zoomOut {
+    0%{
+        scale: 0;
+    }
+    50% {
+        scale: 1;
+    }
+}

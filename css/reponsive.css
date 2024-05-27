@@ -1,0 +1,54 @@
+@media  screen and (max-width: 991.98px) {
+    button.navbar-toggler {
+        background-color: #fff;
+        background-image: url("	data:image/svg+xml,%3csvg xmlns='http://www.w3.org…dth='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    /* .carousel .carousel-item .carousel_content {
+        margin-top: 10vh;
+    } */
+    .nav-link {
+        background: #fff;
+        color: green !important;
+    }
+    header .collapse .nav-link:hover {
+        background: green;
+        color: #fff !important;
+        
+    }
+    
+}
+
+@media screen and (max-width: 575.98px){
+    /* .carousel .carousel-item .carousel_content {
+        margin-top:30vh;
+    } */
+    
+.carousel .carousel-item  .carousel_content img {
+  
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+.carousel_content h1 {
+    font-size: 7vw;
+    padding: 30px 0;
+}
+.carousel_content p {
+    font-size: 4vw;
+}
+}
+@media screen and (max-width: 450px){
+    .carousel .carousel-item  .carousel_content img {
+  
+        width: 40vw;
+        height: 40vw;
+        border-radius: 50%;
+    }
+    .carousel_content h1 {
+        font-size: 8vw;
+        padding: 20px 0;
+    }
+    .carousel_content p {
+        font-size: 5vw;
+    }
+    }
